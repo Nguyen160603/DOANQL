@@ -1,0 +1,17 @@
+﻿@using DOANQL.Models;
+@model IEnumerable<TbCategory>
+
+<div class="single-sidebar-widget-outer">
+    <div class="sec-title-cat sec-title">
+        <h2>Categories</h2>
+    </div>
+    <div class="categories">
+        <ul>
+            @foreach(var item in Model)
+            {
+                <li><a href="#">@item.Title</a></li>
+            }
+           
+        </ul>
+    </div>
+</div>
